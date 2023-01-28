@@ -4,7 +4,7 @@ class Move;
 class Board {
 public:
     static Board* fromEPD(char *epd[]);
-    Board(std::array<unsigned long long, 12> bitboards, bool whiteToMove1, char castlingRights1, char enPassantSquare1);
+    Board(unsigned long long bitboards[12], bool whiteToMove1, char castlingRights1, char enPassantSquare1);
     //Board(const Board& orig);
     Board* makeMove(const Move& move);
     unsigned long long getWhitePieces();

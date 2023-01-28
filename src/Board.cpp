@@ -24,7 +24,7 @@ bool whiteToMove;
 char castlingRights;
 char enPassantSquare;
 
-Board::Board(array<unsigned long long, 12> bitboards, bool whiteToMove1, char castlingRights1, char enPassantSquare1)
+Board::Board(unsigned long long bitboards[12], bool whiteToMove1, char castlingRights1, char enPassantSquare1)
 {
     whitePawns = bitboards[0];
     whiteKing = bitboards[1];
@@ -45,8 +45,8 @@ Board::Board(array<unsigned long long, 12> bitboards, bool whiteToMove1, char ca
 
 Board* Board::fromEPD(char *epd[]) 
 {
-    array<unsigned long long, 12> bitboards;
-    
+    unsigned long long bitboards[12] = { 0 };
+
     //Piece placement
     string ranks = epd[2];
     for (size_t i = 0; i < ranks.size(); i++)
@@ -62,7 +62,7 @@ Board* Board::fromEPD(char *epd[])
             case '6':
             case '7':
             case '8':
-                i += ranks[i] - '1';
+                i += ranks[i] - (unsigned char)'1';
                 continue;
                 break;
             case 'P':
@@ -102,7 +102,7 @@ Board* Board::fromEPD(char *epd[])
                 bb = 11;
                 break;
             default:
-                bb = 12;
+                cout << "Problem occured" << endl;
                 break;
         }
 
