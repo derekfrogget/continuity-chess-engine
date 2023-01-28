@@ -1,0 +1,3 @@
+D:/GitKraken/continuity-chess-engine/build/CMakeFiles/Continuity.dir
+D:/GitKraken/continuity-chess-engine/build/CMakeFiles/ALL_BUILD.dir
+D:/GitKraken/continuity-chess-engine/build/CMakeFiles/ZERO_CHECK.dir

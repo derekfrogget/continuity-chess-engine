@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\GitKraken\continuity-chess-engine\build\CMakeFiles\f1ef80b2361a745b195303e01c9c776b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AED42021-BA60-3460-B11B-B9A628EB149F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

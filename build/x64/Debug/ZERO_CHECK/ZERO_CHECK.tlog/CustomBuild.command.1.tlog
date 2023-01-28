@@ -1,0 +1,10 @@
+^D:\GITKRAKEN\CONTINUITY-CHESS-ENGINE\BUILD\CMAKEFILES\F1EF80B2361A745B195303E01C9C776B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GitKraken/continuity-chess-engine -BD:/GitKraken/continuity-chess-engine/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GitKraken/continuity-chess-engine/build/Continuity.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
